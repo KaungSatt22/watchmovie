@@ -17,7 +17,7 @@ const SearchMoviesList = ({
     let fetchSearchMovie = async () => {
       setIsLoading(true);
       let req = await fetch(
-        `http://www.omdbapi.com/?apikey=${apikey}&s=${search}`,
+        `https://www.omdbapi.com/?apikey=${apikey}&s=${search}`,
         {
           signal: controller.signal,
         }
