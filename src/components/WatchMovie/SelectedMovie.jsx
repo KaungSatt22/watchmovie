@@ -55,10 +55,10 @@ const SelectedMovie = ({
       ) : (
         <div className="text-white relative">
           <button
-            className="absolute bg-black rounded-full w-10 h-10 text-xl"
+            className="absolute bg-black rounded-full w-10 h-10 text-3xl"
             onClick={onRemoveID}
           >
-            &lt;&ndash;
+            &larr;
           </button>
           <div className="flex gap-5 bg-slate-600 ">
             {movie.Poster === "N/A" ? (
