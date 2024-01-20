@@ -29,7 +29,7 @@ const SearchMoviesList = ({
         container.abort();
       };
     };
-    if (search.length) {
+    if (search.length > 3) {
       fetchSearchMovie();
     }
   }, [search]);
@@ -41,17 +41,16 @@ const SearchMoviesList = ({
       >
         {isOpen ? "-" : "+"}
       </button>
-      {isOpen && (
+      {isOpen && isLoading ? (
+        <p className="text-white flex items-center justify-center h-full text-4xl font-bold">
+          Loading ...
+        </p>
+      ) : (
         <MovieList
           searchMovies={searchMovies}
           onSelectedID={onSelectedID}
           search={search}
         />
-      )}
-      {isOpen && isLoading && (
-        <p className="text-white flex items-center justify-center h-full text-4xl font-bold">
-          Loading ...
-        </p>
       )}
     </div>
   );

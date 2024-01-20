@@ -3,7 +3,7 @@ import { useState } from "react";
 
 const StarRating = ({
   maxLen = 5,
-  color = "gold",
+  color = "#ED8A19",
   width = 30,
   height = 30,
   onClick = () => {},
@@ -23,29 +23,55 @@ const StarRating = ({
         >
           {(tempRate ? tempRate >= i + 1 : rate >= i + 1) ? (
             <svg
-              width={width}
               height={height}
-              viewBox="0 0 24 24"
+              width={width}
+              version="1.1"
+              id="Capa_1"
               xmlns="http://www.w3.org/2000/svg"
+              xmlnsXlink="http://www.w3.org/1999/xlink"
+              viewBox="0 0 47.94 47.94"
+              xmlSpace="preserve"
+              fill="#000000"
             >
-              <path
-                d="M12 1l2.76 8.5H22l-7 5.12 2.74 8.38L12 17.27l-5.74 4.73L7 14.62 0 9.5h7.24L12 1z"
-                fill={color}
+              <g id="SVGRepo_bgCarrier" strokeWidth={0} />
+              <g
+                id="SVGRepo_tracerCarrier"
+                strokeLinecap="round"
+                strokeLinejoin="round"
               />
+              <g id="SVGRepo_iconCarrier">
+                {" "}
+                <path
+                  style={{ fill: color }}
+                  d="M26.285,2.486l5.407,10.956c0.376,0.762,1.103,1.29,1.944,1.412l12.091,1.757 c2.118,0.308,2.963,2.91,1.431,4.403l-8.749,8.528c-0.608,0.593-0.886,1.448-0.742,2.285l2.065,12.042 c0.362,2.109-1.852,3.717-3.746,2.722l-10.814-5.685c-0.752-0.395-1.651-0.395-2.403,0l-10.814,5.685 c-1.894,0.996-4.108-0.613-3.746-2.722l2.065-12.042c0.144-0.837-0.134-1.692-0.742-2.285l-8.749-8.528 c-1.532-1.494-0.687-4.096,1.431-4.403l12.091-1.757c0.841-0.122,1.568-0.65,1.944-1.412l5.407-10.956 C22.602,0.567,25.338,0.567,26.285,2.486z"
+                />{" "}
+              </g>
             </svg>
           ) : (
             <svg
-              width={width}
               height={height}
-              viewBox="0 0 24 24"
+              width={width}
+              version="1.1"
+              id="Capa_1"
               xmlns="http://www.w3.org/2000/svg"
+              xmlnsXlink="http://www.w3.org/1999/xlink"
+              viewBox="0 0 47.94 47.94"
+              xmlSpace="preserve"
+              fill="#000000"
             >
-              <path
-                d="M12 1l2.76 8.5H22l-7 5.12 2.74 8.38L12 17.27l-5.74 4.73L7 14.62 0 9.5h7.24L12 1z"
-                fill="none"
-                stroke={color}
-                strokeWidth="2"
+              <g id="SVGRepo_bgCarrier" strokeWidth={0} />
+              <g
+                id="SVGRepo_tracerCarrier"
+                strokeLinecap="round"
+                strokeLinejoin="round"
               />
+              <g id="SVGRepo_iconCarrier">
+                {" "}
+                <path
+                  style={{ fill: "#000" }}
+                  d="M26.285,2.486l5.407,10.956c0.376,0.762,1.103,1.29,1.944,1.412l12.091,1.757 c2.118,0.308,2.963,2.91,1.431,4.403l-8.749,8.528c-0.608,0.593-0.886,1.448-0.742,2.285l2.065,12.042 c0.362,2.109-1.852,3.717-3.746,2.722l-10.814-5.685c-0.752-0.395-1.651-0.395-2.403,0l-10.814,5.685 c-1.894,0.996-4.108-0.613-3.746-2.722l2.065-12.042c0.144-0.837-0.134-1.692-0.742-2.285l-8.749-8.528 c-1.532-1.494-0.687-4.096,1.431-4.403l12.091-1.757c0.841-0.122,1.568-0.65,1.944-1.412l5.407-10.956 C22.602,0.567,25.338,0.567,26.285,2.486z"
+                />{" "}
+              </g>
             </svg>
           )}
         </div>

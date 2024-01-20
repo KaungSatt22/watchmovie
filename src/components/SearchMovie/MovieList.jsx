@@ -7,7 +7,7 @@ const MovieList = ({ searchMovies, onSelectedID, search }) => {
       {searchMovies?.length === 0 ? (
         <div className="h-full flex items-center justify-center">
           <p className="text-3xl font-bold text-white">
-            {search.length
+            {search.length > 3
               ? `Sorry Can't find ${search} movie.`
               : "Let's Find Some MOVIES 🍿"}
           </p>
